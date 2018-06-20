@@ -8,7 +8,7 @@ https://www.kaggle.com/cjgdev/formula-1-race-data-19502017
 
 The SQL scripts generate *External Tables* which can be used to import data.
 
-**Note:** The deployment script does not persist the data inside the database, so that user is free to enforce a schema and the required constraints. 
+**Note:** The deployment script does not persist the data inside the database, so that user is free to enforce a schema and the required constraints, and create other persisted data structures such as indices. 
 
 ## Deployment
 
