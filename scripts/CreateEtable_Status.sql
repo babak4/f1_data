@@ -10,5 +10,5 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             NOLOGFILE
             SKIP 1
         FIELDS TERMINATED BY ','
-    ) LOCATION ( 'status.csv' )
+    ) LOCATION ( '../data/status.csv' )
 ) REJECT LIMIT UNLIMITED;

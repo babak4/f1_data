@@ -29,4 +29,4 @@ ACCESS PARAMETERS (
 DATE "DD/MM/YYYY",
     nationality,
     url
-    ) ) location('drivers.csv') ) reject limit unlimited;
+    ) ) location('../data/drivers.csv') ) reject limit unlimited;

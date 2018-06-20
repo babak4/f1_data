@@ -18,5 +18,5 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             nationality,
             url
         )
-    ) LOCATION ( 'constructors.csv' )
+    ) LOCATION ( '../data/constructors.csv' )
 ) REJECT LIMIT UNLIMITED;

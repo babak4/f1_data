@@ -20,5 +20,5 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             lap_time,
             miliseconds
         )
-    ) LOCATION ( 'lapTimes.csv' )
+    ) LOCATION ( '../data/lapTimes.csv' )
 ) REJECT LIMIT UNLIMITED;

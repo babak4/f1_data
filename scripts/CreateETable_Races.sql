@@ -27,4 +27,4 @@ ACCESS PARAMETERS (
 DATE "YYYY-MM-DD",
     race_time,
     url
-    ) ) location('races.csv') ) reject limit unlimited;
+    ) ) location('../data/races.csv') ) reject limit unlimited;

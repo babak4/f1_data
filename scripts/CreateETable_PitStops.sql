@@ -21,5 +21,5 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             pitsop_duration,
             milliseconds
         )
-    ) LOCATION ( 'pitStops.csv' )
+    ) LOCATION ( '../data/pitStops.csv' )
 ) REJECT LIMIT UNLIMITED;
