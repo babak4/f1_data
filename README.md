@@ -14,16 +14,39 @@ The SQL scripts generate *External Tables* which can be used to import data.
 
 The external tables rely on a directory object named "f1_data."
 
-The directory object can be created (using SYS/SYSTEM accounts or any other privileged account) using the following command:
+The directory object can be created using any account which has CREATE ANY DIRECTORY privilege using the following command in an Oracle SQL client, such as SQL*Plus, SQLcl, or SQLDeveloper:
 
 ```
-DEFINE path_to_csv_files = '{path to the directory (accessible via the database server) which contains the CSV files}'
+SQL>DEFINE path_to_csv_files = '{path to the directory which contains the CSV files}'
 
-CREATE OR REPLACE DIRECTORY f1_data AS '&&path_to_csv_files';
+SQL>DEFINE f1_data_schema = '{name of the schema that the external tables will reside in it}'
+
+SQL>CREATE OR REPLACE DIRECTORY f1_data AS '&&path_to_csv_files';
+
+SQL>GRANT READ,WRITE TO DIRECTORY f1_data to '&&f1_data_schema';
+```
+
+example:
+
+```
+SQL>DEFINE path_to_csv_files = '/home/oracle/data/f1'
+
+SQL>DEFINE f1_data_schema = 'scott'
+
+SQL>CREATE OR REPLACE DIRECTORY f1_data AS '&&path_to_csv_files';
+
+SQL>GRANT READ,WRITE TO DIRECTORY f1_data to '&&f1_data_schema';
 ```
 
 Afterwards you can create all the external tables using *install.sql*
 
 ```
-$sqlplus scott/oracle@db_tnsname @install.sql
+$sqlplus username/password@db_tnsname_OR_connection_string @install.sql
 ```
+
+example using a "Developer Day Appliance" (can be downloaded from http://www.oracle.com/technetwork/database/enterprise-edition/databaseappdev-vm-161299.html):
+
+```
+$sqlplus scott/oracle@localhost:1521/orcl @install.sql
+```
+
