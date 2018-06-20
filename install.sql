@@ -9,3 +9,6 @@
 @@scripts/CreateETable_Races.sql
 @@scripts/CreateETable_Results.sql
 @@scripts/CreateETable_Status.sql
+
+exit
+

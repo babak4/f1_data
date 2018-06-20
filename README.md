@@ -17,11 +17,11 @@ The external tables rely on a directory object named "f1_data."
 The directory object can be created (using SYS/SYSTEM accounts or any other privileged account) using the following command:
 
 ```
-CREATE OR REPLACE DIRECTORY f1_data AS '{path to the directory which contains the CSV files}';
+CREATE OR REPLACE DIRECTORY f1_data AS '{path to the directory (accessible via the database server) which contains the CSV files}';
 ```
 
 Afterwards you can create all the external tables using *install.sql*
 
 ```
-$sqlplus *scott/oracle@db_tnsname* @install.sql
+$sqlplus scott/oracle@db_tnsname @install.sql
 ```
