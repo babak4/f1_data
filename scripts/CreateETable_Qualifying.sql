@@ -26,5 +26,5 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             q2,
             q3
         )
-    ) LOCATION ( '../data/qualifying.csv' )
+    ) LOCATION ( 'qualifying.csv' )
 ) REJECT LIMIT UNLIMITED;

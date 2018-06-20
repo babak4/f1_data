@@ -39,5 +39,5 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             fastestlap_speed,
             status_id
         )
-    ) LOCATION ( '../data/results.csv' )
+    ) LOCATION ( 'results.csv' )
 ) REJECT LIMIT UNLIMITED;

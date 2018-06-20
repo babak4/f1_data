@@ -17,5 +17,5 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             points,
             status
         )
-    ) LOCATION ( '../data/constructorResults.csv' )
+    ) LOCATION ( 'constructorResults.csv' )
 ) REJECT LIMIT UNLIMITED;
