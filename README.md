@@ -1,4 +1,4 @@
-# f1_data
+# Formula1 Data (1950 - 2017)
 
 This repository can be used to import Formula1 Race Data (from 1950 to 2017) into Oracle database.
 
