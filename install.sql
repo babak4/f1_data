@@ -1,3 +1,4 @@
+@@scripts/CreateETable_Circuits.sql
 @@scripts/CreateETable_Constructors.sql
 @@scripts/CreateETable_ConstructorResults.sql
 @@scripts/CreateETable_ConstructorStandings.sql
@@ -11,4 +12,3 @@
 @@scripts/CreateETable_Status.sql
 
 exit
-
