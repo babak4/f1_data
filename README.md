@@ -23,7 +23,7 @@ SQL>DEFINE f1_data_schema = '{name of the schema that the external tables will r
 
 SQL>CREATE OR REPLACE DIRECTORY f1_data AS '&&path_to_csv_files';
 
-SQL>GRANT READ,WRITE TO DIRECTORY f1_data to '&&f1_data_schema';
+SQL>GRANT READ,WRITE ON DIRECTORY f1_data to '&&f1_data_schema';
 ```
 
 example:
@@ -35,7 +35,7 @@ SQL>DEFINE f1_data_schema = 'scott'
 
 SQL>CREATE OR REPLACE DIRECTORY f1_data AS '&&path_to_csv_files';
 
-SQL>GRANT READ,WRITE TO DIRECTORY f1_data to '&&f1_data_schema';
+SQL>GRANT READ,WRITE ON DIRECTORY f1_data to '&&f1_data_schema';
 ```
 
 Afterwards you can create all the external tables using *install.sql*
