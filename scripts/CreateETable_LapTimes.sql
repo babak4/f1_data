@@ -5,7 +5,7 @@ CREATE TABLE laptimes_ext (
     driver_id         INTEGER,
     lap               INTEGER,
     position_in_lap   INTEGER,
-    miliseconds       INTEGER
+    milliseconds       INTEGER
 )
 ORGANIZATION EXTERNAL ( TYPE oracle_loader
     DEFAULT DIRECTORY f1_data ACCESS PARAMETERS (
@@ -18,7 +18,7 @@ ORGANIZATION EXTERNAL ( TYPE oracle_loader
             lap,
             position_in_lap,
             lap_time,
-            miliseconds
+            milliseconds
         )
     ) LOCATION ( 'lapTimes.csv' )
 ) REJECT LIMIT UNLIMITED;

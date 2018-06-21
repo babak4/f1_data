@@ -1,6 +1,6 @@
-DROP TABLE driver_standing_ext;
+DROP TABLE driver_standings_ext;
 
-CREATE TABLE driver_standing_ext (
+CREATE TABLE driver_standings_ext (
     race_id         INTEGER,
     driver_id       INTEGER,
     points          INTEGER,

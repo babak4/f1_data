@@ -1,6 +1,6 @@
-DROP TABLE constructors_standings_ext;
+DROP TABLE constructor_standings_ext;
 
-CREATE TABLE constructors_standings_ext (
+CREATE TABLE constructor_standings_ext (
     race_id          INTEGER,
     constructor_id   INTEGER,
     points           INTEGER,

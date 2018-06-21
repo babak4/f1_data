@@ -11,4 +11,18 @@
 @@scripts/CreateETable_Results.sql
 @@scripts/CreateETable_Status.sql
 
+PROMPT Creating Sample Schema
+@@scripts/CreateTable_Circuits.sql
+@@scripts/CreateTable_Constructors.sql
+@@scripts/CreateTable_Races.sql
+@@scripts/CreateTable_ConstructorResults.sql
+@@scripts/CreateTable_ConstructorStandings.sql
+@@scripts/CreateTable_Drivers.sql
+@@scripts/CreateTable_DriverStandings.sql
+@@scripts/CreateTable_LapTimes.sql
+@@scripts/CreateTable_PitStops.sql
+@@scripts/CreateTable_Qualifying.sql
+@@scripts/CreateTable_Status.sql
+@@scripts/CreateTable_Results.sql
+
 exit
