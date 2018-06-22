@@ -1,3 +1,5 @@
+SET SQLBLANKLINES ON
+
 PROMPT Creating External Tables
 @@scripts/CreateETable_Circuits.sql
 @@scripts/CreateETable_Constructors.sql
