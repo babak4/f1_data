@@ -10,8 +10,17 @@ The SQL scripts generate *External Tables* which can be used to import data.
 
 ~~**Note:** The deployment script does not persist the data inside the database, so that user is free to enforce a schema and the required constraints, and create other persisted data structures such as indices.~~ 
 
-**Note: Work In Progress**
-The script deploys a sample schema which enforces referential integrity constraints.
+**Note:**
+The script deploys a series of tables in a schema of your choice and enforces referential integrity constraints on them.
+
+The tables are populated using the dataset (csv files) via external tables.
+
+**Expected Anomaly in the data:**
+In many races (i.e. *Results* table) you will find multiple drivers per race! 
+
+That is not an issue with the data: for a period of time (1950s mainly) teams were allowed to run multiple drivers in a race (see an example: https://en.wikipedia.org/wiki/1955_Argentine_Grand_Prix) so the car was effectively shared among those drivers.
+
+In that regard there are problems with the data: despite the fact that you can see evidence of "car sharing", but in many instances drivers have the same name (retrieved from *Drivers* table).
 
 ## Deployment
 
